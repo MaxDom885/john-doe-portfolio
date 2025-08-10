@@ -1,0 +1,99 @@
+:root {
+    /* Couleurs principales */
+    --tuatara: #1F1F1E;
+    --turmeric: #CBC250;
+    --bitter: #8B8D7E;
+    --suvaGray: #858285;
+    --nav-bg: rgba(31, 31, 30, 0.85);
+    --transition-speed: 0.3s;
+}
+/* STYLE DE SECTION PRINCIPALE HERO */
+.section-principale {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 120px 50px;
+}
+
+.section-principale-titre {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1.5s ease-out forwards;
+}
+
+.section-principale-texte {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 300;
+    line-height: 1.6;
+    color: #f5f5f5;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1.5s ease-out 0.3s forwards;
+    margin-bottom: 2rem;
+    letter-spacing: 0.01em;
+    padding: 0 1rem;
+}
+
+.section-principale-boutons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1.5s ease-out 0.6s forwards;
+}
+
+.section-principale-btn-portfolio,
+.section-principale-btn-contact {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    border-radius: 25px;
+}
+
+.section-principale-btn-portfolio {
+    background-color: var(--turmeric);
+    color: var(--tuatara);
+    border: none;
+}
+
+.section-principale-btn-portfolio:hover {
+    background-color: white;
+    color: var(--tuatara);
+    box-shadow: 0 4px 12px var(--turmeric);
+}
+
+.section-principale-btn-contact {
+    background-color: transparent;
+    border: 2px solid var(--turmeric);
+    color: var(--turmeric);
+}
+
+.section-principale-btn-contact:hover {
+    background-color: var(--turmeric);
+    color: var(--tuatara);
+    box-shadow: 0 4px 12px var(--turmeric);
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

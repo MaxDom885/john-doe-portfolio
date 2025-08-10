@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Styliste</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/accueil-hero.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/accueil-presentation.css">
+    <link rel="stylesheet" href="css/accueil-projets.css">
+    <link rel="stylesheet" href="css/accueil-actu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <!-- Logo à gauche -->
+                <li class="navbar-logo-container">
+                    <img src="images/logos/logo.png" alt="Logo John Doe" class="navbar-logo">
+                </li>
+
+                <!-- Menu Hamburger (mobile seulement) -->
+                <li class="navbar-toggle">
+                    <span class="navbar-toggle-icon"></span>
+                </li>
+
+                <!-- Liens au centre -->
+                <li class="navbar-center">
+                    <a href="#" class="navbar-link">About</a>
+                    <a href="#" class="navbar-link">Portfolio</a>
+                    <a href="#" class="navbar-link">Actu & News</a>
+                </li>
+
+                <!-- Bouton à droite -->
+                <li class="navbar-right">
+                    <button class="navbar-CTA">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="section-principale">
+            <h1 class="section-principale-titre">Des créations qui racontent une histoire</h1>
+            <p class="section-principale-texte">
+                John Doe - Styliste contemporain et écoresponsable basé à Paris
+            </p>
+            <span class="section-principale-boutons">
+                <button class="section-principale-btn-portfolio">Voir le PORTFOLIO</button>
+                <button class="section-principale-btn-contact">Me Contacter</button>
+            </span>
+        </section>
+        
+        <section class="section-presentation" aria-label="Présentation de John Doe">
+            <h2 class="section-presentation-titre"> Découvrez John Doe </h2>
+            <div class="section-presentation-image">
+                <img src="images/john.png" alt="John Doe, styliste indépendant" loading="lazy">
+            </div>
+            <div class="section-presentation-content">
+                <div class="section-presentation-description">
+                    <p>Styliste indépendant depuis 8 ans, John Doe conçoit des collections uniques inspirées par l’élégance intemporelle et la durabilité.</p>
+                    <p>Lauréat du concours Jeunes Talents de la Mode 2020, il collabore avec designers et photographes pour créer des pièces inoubliables.</p>
+                </div>
+                <a href="#" class="section-presentation-btn" aria-label="En savoir plus sur John Doe">
+                    Plus <span aria-hidden="true">>></span>
+                </a>
+            </div>
+        </section>
+        <section class="projets-section" aria-label="Sélection de projets">
+
+<div class="section-wave"></div>
+
+    <h2 class="section-titre">Sélection de projets récents</h2>
+    
+    <div class="projets-grid">
+        <!-- Carte 1 -->
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/poses/pose2.jpg" alt="Collection Équinoxe FW2024">
+            </div>
+            <div class="projet-details">
+                <h3 class="projet-titre">Collection Équinoxe</h3>
+                <span class="projet-sous-titre">FW 2024</span>
+                <p class="projet-description">Capsule minimaliste explorant les volumes architecturaux et les matières éco-responsables</p>
+                <a href="#" class="projet-cta">Voir le projet</a>
+            </div>
+        </div>
+        
+        <!-- Carte 2 -->
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/poses/pose1.jpg" alt="Shooting Vogue Paris">
+            </div>
+            <div class="projet-details">
+                <h3 class="projet-titre">Vogue Paris</h3>
+                <span class="projet-sous-titre">Juin 2023</span>
+                <p class="projet-description">Direction artistique d'un editorial sur le contraste entre brut et précieux</p>
+                <a href="#" class="projet-cta">Voir le projet</a>
+            </div>
+        </div>
+        
+        <!-- Carte 3 -->
+        <div class="projet-card">
+            <div class="projet-image">
+                <img src="images/poses/pose.jpg" alt="Collaboration Maison Verveine">
+            </div>
+            <div class="projet-details">
+                <h3 class="projet-titre">Maison Verveine</h3>
+                <span class="projet-sous-titre">Collaboration</span>
+                <p class="projet-description">Co-création de pièces uniques alliant savoir-faire joaillier et innovation textile</p>
+                <a href="#" class="projet-cta">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-cta">
+        <a href="#" class="portfolio-full-btn">
+            Voir tout le portfolio
+        </a>
+    </div>
+</section>
+
+<section class="actualites-section" aria-label="Actualités et dernières parutions">
+    <h2 class="section-titre">Actualités / Dernières parutions</h2>
+    
+    <div class="actualites-grid">
+        <!-- Tuile 1 - Fashion Week -->
+        <article class="actualite-card actualite-event">
+            <div class="actualite-badge">Événement</div>
+            <div class="actualite-content">
+                <h3 class="actualite-titre">Participation à la Fashion Week Paris</h3>
+                <p class="actualite-date">Septembre 2025</p>
+                <p class="actualite-description">Présentation de la collection "Équinoxe" au Carrousel du Louvre</p>
+                <a href="#" class="actualite-cta" aria-label="En savoir plus sur la Fashion Week">
+                    Voir les détails <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Tuile 2 - Interview -->
+        <article class="actualite-card actualite-presse">
+            <div class="actualite-badge">Presse</div>
+            <div class="actualite-content">
+                <h3 class="actualite-titre">Interview dans L'Officiel</h3>
+                <p class="actualite-date">Mai 2024</p>
+                <blockquote class="actualite-citation">"Une approche révolutionnaire du luxe durable"</blockquote>
+                <a href="#" class="actualite-cta" aria-label="Lire l'interview">
+                    Lire l'article <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Tuile 3 - Partenariat -->
+        <article class="actualite-card actualite-partenaire">
+            <div class="actualite-badge">Innovation</div>
+            <div class="actualite-content">
+                <h3 class="actualite-titre">Nouveau partenariat textile <span class="highlight">bio</span></h3>
+                <p class="actualite-date">Mars 2024</p>
+                <p class="actualite-description">Collaboration exclusive avec GreenTextile™</p>
+                <a href="#" class="actualite-cta" aria-label="Découvrir le partenariat">
+                    Explorer <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>
+    </main>
+    <footer class="site-footer" aria-label="Pied de page">
+    <div class="footer-container">
+        <!-- Colonne 1 : Logo & Copyright -->
+        <div class="footer-col">
+            <img src="images/logos/logo.png" alt="John Doe - Styliste" class="footer-logo">
+            <p class="footer-copyright">© 2024 John Doe. Tous droits réservés.</p>
+        </div>
+
+        <!-- Colonne 2 : Navigation -->
+        <div class="footer-col">
+            <h3 class="footer-title">Navigation</h3>
+            <ul class="footer-nav">
+                <li><a href="/portfolio" class="footer-link">Portfolio</a></li>
+                <li><a href="/apropos" class="footer-link">À propos</a></li>
+                <li><a href="/actualites" class="footer-link">Actualités</a></li>
+                <li><a href="/contact" class="footer-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Contact -->
+        <div class="footer-col">
+            <h3 class="footer-title">Contact</h3>
+            <address class="footer-contact">
+                <a href="mailto:contact@johndoe.com" class="footer-link">contact@johndoe.com</a><br>
+                <a href="tel:+33123456789" class="footer-link">+33 1 23 45 67 89</a>
+            </address>
+        </div>
+
+        <!-- Colonne 4 : Réseaux sociaux -->
+        <div class="footer-col">
+            <h3 class="footer-title">Réseaux</h3>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram" class="social-icon">Instagram</a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">LinkedIn</a>
+                <a href="#" aria-label="Pinterest" class="social-icon">Pinterest</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ligne de séparation et mentions légales -->
+    <div class="footer-bottom">
+        <div class="footer-separator"></div>
+        <div class="footer-legal">
+            <a href="#" class="footer-link">Mentions légales</a>
+            <a href="#" class="footer-link">Politique de confidentialité</a>
+            <a href="#" class="footer-link">CGV</a>
+        </div>
+    </div>
+</footer>
+    <script>
+        document.querySelector('.navbar-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.navbar-center').classList.toggle('active');
+            document.querySelector('.navbar-right').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

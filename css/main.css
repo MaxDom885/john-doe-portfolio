@@ -1,0 +1,29 @@
+:root {
+    /* Couleurs principales */
+    --tuatara: #1F1F1E;
+    --turmeric: #CBC250;
+    --bitter: #8B8D7E;
+    --suvaGray: #858285;
+    --nav-bg: rgba(31, 31, 30, 0.85);
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* ------ SÉPARATION ENTRE SECTIONS ------ */
+.section-wave {
+    position: relative;
+    height: 30px;
+    margin: 60px 0;
+    overflow: hidden;
+}

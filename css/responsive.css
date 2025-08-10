@@ -1,0 +1,135 @@
+:root {
+    /* Couleurs principales */
+    --tuatara: #1F1F1E;
+    --turmeric: #CBC250;
+    --bitter: #8B8D7E;
+    --suvaGray: #858285;
+    --nav-bg: rgba(31, 31, 30, 0.85);
+    --transition-speed: 0.3s;
+}
+
+/* Menu Hamburger - Optimisé */
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1001; /* Au-dessus de la navbar */
+    background: transparent;
+    border: none;
+}
+
+.navbar-toggle-icon {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: all var(--transition-speed) ease;
+}
+
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all var(--transition-speed) ease;
+    left: 0;
+}
+
+.navbar-toggle-icon::before {
+    top: -8px;
+}
+
+.navbar-toggle-icon::after {
+    bottom: -8px;
+}
+
+/* État actif amélioré */
+.navbar-toggle.active .navbar-toggle-icon {
+    background: transparent;
+}
+
+.navbar-toggle.active .navbar-toggle-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar-toggle.active .navbar-toggle-icon::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+/* Responsive - 1024px */
+@media (max-width: 1024px) {
+    .navbar-center {
+        gap: 25px; /* Réduit l'espacement */
+    }
+    
+    .navbar-link {
+        padding: 10px 12px; /* Padding plus serré */
+    }
+}
+
+/* Responsive - 768px */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-wrap: nowrap; /* Modifié */
+        padding: 10px 0;
+    }
+    
+    .navbar-toggle {
+        display: block;
+        order: 2; /* Position après le logo */
+    }
+    
+    .navbar-logo-container {
+        order: 1;
+        flex: 1; /* Prend l'espace disponible */
+    }
+    
+    .navbar-center {
+        order: 4;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Animation plus douce */
+        background: rgba(31, 31, 30, 0.95); /* Fond légèrement différent */
+    }
+    
+    .navbar-center.active {
+        max-height: 100vh;
+        padding: 15px 0;
+    }
+    
+    .navbar-link {
+        padding: 15px;
+        font-size: 1rem; /* Taille cohérente */
+        border-top: 1px solid rgba(203, 194, 80, 0.1); /* Séparateur */
+    }
+    
+    .navbar-right {
+        order: 3;
+        width: auto;
+        margin: 0 15px;
+        display: none;
+    }
+    
+    .navbar-right.active {
+        display: block;
+    }
+    
+    .navbar-CTA {
+        width: 100%;
+        margin: 10px 0 0;
+        padding: 12px; /* Plus compact */
+    }
+    
+    /* Empêche le défilement quand le menu est ouvert */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
